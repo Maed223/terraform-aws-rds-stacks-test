@@ -120,7 +120,8 @@ resource "aws_db_instance" "education" {
 
 #MODULE AUTHOR WORKFLOW:
 # When you update a no-code module, Terraform Cloud notifies every workspace that uses the module that a newer version is available.
-#Add a new variable to no code module and push a new tag
+#Add a new variable to no code module, commit, push. 
+# Push a new tag 1.0.1
 # TFC will continue to use version 1.0.0 of the module until you configure it to use the new version: Go to your organization's Terraform Cloud registry, click your terraform-aws-rds module, and click Configure Settings.
 # Click Edit version and variable options. Under Module version, select 1.0.1 (latest) and click Save.
 

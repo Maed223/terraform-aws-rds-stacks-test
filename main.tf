@@ -1,9 +1,3 @@
-provider "aws" {
-  region = "us-east-2"
-} //The main difference between no-code modules and ordinary modules is that the no-code workflow requires declaring provider configuration within the module itself. Authors of standard modules usually avoid including the provider configuration within the module because it makes the module incompatible with the for_each, count, and depends_on meta-arguments. Since users will not reference no-code modules in written configuration, there is no risk of this conflict.
-
-provider "random" {}
-
 data "aws_availability_zones" "available" {}
 
 resource "random_pet" "random" {}
